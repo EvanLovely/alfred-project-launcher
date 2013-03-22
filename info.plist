@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>425AF9D9-163E-4FF5-94D0-392F4243B2D0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6B624452-BAA9-4BE9-A92C-BDA2AE7BF719</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>63AE5685-92E4-4FDF-BE71-4A41B412F3B8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A91A188B-F740-4AAE-8385-E470B82483D8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>425AF9D9-163E-4FF5-94D0-392F4243B2D0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>5F604D7D-F7E6-4EA5-B43C-AA8419D87F4A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>839ECC54-2297-44E8-BF7E-48109051F468</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4F69B98E-CE19-40CB-8804-39E35C0B816B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>9352E6DE-FE77-4B39-B233-8875C76E70EC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>839ECC54-2297-44E8-BF7E-48109051F468</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>0A3FB948-E941-422E-99BD-C26FC718B21D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>A91A188B-F740-4AAE-8385-E470B82483D8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7D696191-00CD-4AF3-9339-F919E64AB410</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Evan Lovely</string>
+	<key>description</key>
+	<string>Opens all the website apps I need</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Project Launcher</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>The git repo &amp; drupal site will be up to date shortly. We'll let you know when it's ready.</string>
+				<key>title</key>
+				<string>{query} project launched</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>6B624452-BAA9-4BE9-A92C-BDA2AE7BF719</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/CodeKit.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>5F604D7D-F7E6-4EA5-B43C-AA8419D87F4A</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>pro go</string>
+				<key>subtext</key>
+				<string>Pass in the project name (repo)</string>
+				<key>text</key>
+				<string>Project Launcher</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>63AE5685-92E4-4FDF-BE71-4A41B412F3B8</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>open "http://ebook.local:3000" -a "Google Chrome Canary"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.script</string>
+			<key>uid</key>
+			<string>7D696191-00CD-4AF3-9339-F919E64AB410</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>c
+open ~/Dropbox/ombu/clients/{query}
+open ~/Dropbox/Projects/{query}
+open ~/Dropbox/notes/site\ {query}\ notes.md
+stree ~/Sites/{query}/public
+open ~/Dropbox/Apps/Sublime\ Text/{query}.sublime-project
+cd ~/Sites/{query}/public
+git pull
+drush updb -y
+open ~/Dropbox/Apps/Sublime\ Text/{query}.sublime-project
+drush cc all
+terminal-notifier -title "{query} Site: Up to date" -message "Apps opened, git: pull, all submodule init &amp; up, drupal: db updates, &amp; caches cleared."</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>425AF9D9-163E-4FF5-94D0-392F4243B2D0</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>tell application "Finder"	activate	tell application "System Events" to keystroke "w" using {command down, shift down}
+end tell
+
+tell application "SourceTree"	activate	tell application "System Events" to keystroke "w" using {command down, option down}
+	quit
+end tell
+tell application "FoldingText"	activate	tell application "System Events" to keystroke "w" using {command down, option down}	quitend tell
+
+tell application "Sublime Text 2"	activate	tell application "System Events" to keystroke "w" using {command down, shift down}
+	tell application "System Events" to keystroke "w" using {command down, shift down}
+	tell application "System Events" to keystroke "w" using {command down, shift down}
+	tell application "System Events" to keystroke "w" using {command down, shift down}
+	tell application "System Events" to keystroke "w" using {command down, shift down}
+	tell application "System Events" to keystroke "w" using {command down, shift down}
+	quitend tell
+
+tell application "Google Chrome Canary"	activate	tell application "System Events" to keystroke "w" using {command down, shift down}
+	quitend tell
+
+tell application "iTerm"	activate	tell application "System Events" to keystroke "w" using {command down, shift down}
+	quitend tell</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>839ECC54-2297-44E8-BF7E-48109051F468</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>tell application "Eon"	activate	tell application "System Events" to keystroke "f" using {command down}	delay 0.2	tell application "System Events" to keystroke "a" using {command down}	tell application "System Events" to keystroke "{query}"	delay 0.3	tell application "System Events" to keystroke return	tell application "System Events" to keystroke return using {command down}end tell</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>10680961-8786-4025-B096-FBA9CDAB3C06</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>killall lighttpd</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0A3FB948-E941-422E-99BD-C26FC718B21D</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>pro clean</string>
+				<key>subtext</key>
+				<string>Closes all Project Apps</string>
+				<key>text</key>
+				<string>Project Clean Up</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>9352E6DE-FE77-4B39-B233-8875C76E70EC</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>tell application "Sublime Text 2"	activate	delay 0.2	tell application "System Events" to key down (key code 20 using {command down, control down})end telldelay 0.2tell application "Google Chrome Canary"	activate	delay 0.2	tell application "System Events" to key down (key code 21 using {command down, control down})end tell</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.script</string>
+			<key>uid</key>
+			<string>864F7972-9CA4-4C7C-A038-D15F10863A87</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>killall lighttpd
+cd ~/Sites/{query}/public
+lighttpd -Df ~/Dropbox/Briefcase/lib/lighty/lighty.drupal.config</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>A91A188B-F740-4AAE-8385-E470B82483D8</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>title</key>
+				<string>Project Apps Clean Up</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>4F69B98E-CE19-40CB-8804-39E35C0B816B</string>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>0A3FB948-E941-422E-99BD-C26FC718B21D</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>10680961-8786-4025-B096-FBA9CDAB3C06</key>
+		<dict>
+			<key>ypos</key>
+			<real>590</real>
+		</dict>
+		<key>425AF9D9-163E-4FF5-94D0-392F4243B2D0</key>
+		<dict>
+			<key>ypos</key>
+			<real>470</real>
+		</dict>
+		<key>4F69B98E-CE19-40CB-8804-39E35C0B816B</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>5F604D7D-F7E6-4EA5-B43C-AA8419D87F4A</key>
+		<dict>
+			<key>ypos</key>
+			<real>710</real>
+		</dict>
+		<key>63AE5685-92E4-4FDF-BE71-4A41B412F3B8</key>
+		<dict>
+			<key>ypos</key>
+			<real>470</real>
+		</dict>
+		<key>6B624452-BAA9-4BE9-A92C-BDA2AE7BF719</key>
+		<dict>
+			<key>ypos</key>
+			<real>470</real>
+		</dict>
+		<key>7D696191-00CD-4AF3-9339-F919E64AB410</key>
+		<dict>
+			<key>ypos</key>
+			<real>360</real>
+		</dict>
+		<key>839ECC54-2297-44E8-BF7E-48109051F468</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>864F7972-9CA4-4C7C-A038-D15F10863A87</key>
+		<dict>
+			<key>ypos</key>
+			<real>590</real>
+		</dict>
+		<key>9352E6DE-FE77-4B39-B233-8875C76E70EC</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>A91A188B-F740-4AAE-8385-E470B82483D8</key>
+		<dict>
+			<key>ypos</key>
+			<real>360</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://evanlovely.com</string>
+</dict>
+</plist>
