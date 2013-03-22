@@ -35,14 +35,6 @@
 				<key>modifiersubtext</key>
 				<string></string>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>5F604D7D-F7E6-4EA5-B43C-AA8419D87F4A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
 		</array>
 		<key>839ECC54-2297-44E8-BF7E-48109051F468</key>
 		<array>
@@ -99,6 +91,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/CodeKit.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>5F604D7D-F7E6-4EA5-B43C-AA8419D87F4A</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -118,21 +125,6 @@
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>6B624452-BAA9-4BE9-A92C-BDA2AE7BF719</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/CodeKit.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>5F604D7D-F7E6-4EA5-B43C-AA8419D87F4A</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -230,17 +222,23 @@ tell application "iTerm"	activate	tell application "System Events" to keystrok
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>63</integer>
-				<key>script</key>
-				<string>tell application "Eon"	activate	tell application "System Events" to keystroke "f" using {command down}	delay 0.2	tell application "System Events" to keystroke "a" using {command down}	tell application "System Events" to keystroke "{query}"	delay 0.3	tell application "System Events" to keystroke return	tell application "System Events" to keystroke return using {command down}end tell</string>
-				<key>type</key>
-				<integer>6</integer>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>title</key>
+				<string>Project Apps Clean Up</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>10680961-8786-4025-B096-FBA9CDAB3C06</string>
+			<string>4F69B98E-CE19-40CB-8804-39E35C0B816B</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -256,25 +254,6 @@ tell application "iTerm"	activate	tell application "System Events" to keystrok
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>0A3FB948-E941-422E-99BD-C26FC718B21D</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>pro clean</string>
-				<key>subtext</key>
-				<string>Closes all Project Apps</string>
-				<key>text</key>
-				<string>Project Clean Up</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>9352E6DE-FE77-4B39-B233-8875C76E70EC</string>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -295,6 +274,21 @@ tell application "iTerm"	activate	tell application "System Events" to keystrok
 			<key>config</key>
 			<dict>
 				<key>escaping</key>
+				<integer>63</integer>
+				<key>script</key>
+				<string>tell application "Eon"	activate	tell application "System Events" to keystroke "f" using {command down}	delay 0.2	tell application "System Events" to keystroke "a" using {command down}	tell application "System Events" to keystroke "{query}"	delay 0.3	tell application "System Events" to keystroke return	tell application "System Events" to keystroke return using {command down}end tell</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>10680961-8786-4025-B096-FBA9CDAB3C06</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
 				<string>killall lighttpd
@@ -309,23 +303,21 @@ lighttpd -Df ~/Dropbox/Briefcase/lib/lighty/lighty.drupal.config</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>pro clean</string>
+				<key>subtext</key>
+				<string>Closes all Project Apps</string>
+				<key>text</key>
+				<string>Project Clean Up</string>
+				<key>withspace</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>output</key>
-				<integer>0</integer>
-				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
-				<false/>
-				<key>title</key>
-				<string>Project Apps Clean Up</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>4F69B98E-CE19-40CB-8804-39E35C0B816B</string>
+			<string>9352E6DE-FE77-4B39-B233-8875C76E70EC</string>
 		</dict>
 	</array>
 	<key>readme</key>
