@@ -329,7 +329,7 @@ lighttpd -Df ~/Dropbox/Briefcase/lib/lighty/lighty.drupal.config</string>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Designed to help launch multiple apps for a single web development project from Alfred.</string>
 	<key>uidata</key>
 	<dict>
 		<key>0A3FB948-E941-422E-99BD-C26FC718B21D</key>
